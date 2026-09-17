@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#E9D9AB"/>
+  <path d="M0 700C175 665 300 648 445 650C610 653 757 699 890 756C1014 809 1098 822 1200 810V900H0V700Z" fill="#C9A86A"/>
+  <rect x="116" y="110" width="968" height="610" rx="32" fill="#F8F4ED"/>
+  <path d="M180 632H1020L1090 760H110L180 632Z" fill="#D8A956"/>
+  <circle cx="610" cy="420" r="178" fill="#F9F4E9" stroke="#1E2527" stroke-width="12"/>
+  <path d="M519 364C571 332 632 336 681 372C733 410 759 477 746 539C731 611 680 660 610 676C533 693 444 675 392 612C349 559 344 492 378 435C407 387 456 370 519 364Z" fill="#F0D62C"/>
+  <path d="M449 451C505 435 564 441 611 475C660 510 695 567 688 622C691 651 684 676 667 703C625 655 565 621 499 606C443 593 392 595 348 612C323 577 329 515 364 483C390 460 420 448 449 451Z" fill="#F7E97A"/>
+  <path d="M642 348C706 356 762 396 797 450C824 490 838 538 833 584C796 563 759 550 716 548C652 544 588 560 532 592C534 518 568 452 642 348Z" fill="#E2B031" opacity="0.7"/>
+  <text x="130" y="98" font-family="Georgia, serif" font-size="72" fill="#1E2A2A" letter-spacing="6">LOCAL ROAST</text>
+  <text x="130" y="178" font-family="Georgia, serif" font-size="72" fill="#1E2A2A" letter-spacing="6">COFFEE</text>
+</svg>

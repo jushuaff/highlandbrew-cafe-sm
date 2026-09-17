@@ -1,0 +1,25 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" fill="#F0E3B6"/>
+  <path d="M0 830C130 790 216 780 332 770C457 759 578 773 694 815C776 844 837 885 900 932V1200H0V830Z" fill="#C09552"/>
+  <rect x="110" y="104" width="680" height="902" rx="30" fill="#F8F3E8"/>
+  <rect x="160" y="168" width="580" height="118" rx="14" fill="#D7A63E"/>
+  <text x="450" y="242" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="5" fill="#F7F6F1">HIGHLAND BREW</text>
+  <rect x="160" y="332" width="580" height="300" rx="18" fill="#F2E7D0"/>
+  <g fill="#1E2527" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="200" y="404" font-size="30">Mt. Pulag Cloud</text>
+    <text x="200" y="468" font-size="30">Honey Latte</text>
+    <text x="200" y="532" font-size="30">Mocha</text>
+    <text x="200" y="596" font-size="30">Black Coffee</text>
+  </g>
+  <g fill="#D7A63E" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="676" y="404" font-size="24" text-anchor="end">₱160</text>
+    <text x="676" y="468" font-size="24" text-anchor="end">₱165</text>
+    <text x="676" y="532" font-size="24" text-anchor="end">₱155</text>
+    <text x="676" y="596" font-size="24" text-anchor="end">₱120</text>
+  </g>
+  <rect x="160" y="676" width="580" height="226" rx="18" fill="#F0D578"/>
+  <circle cx="286" cy="788" r="70" fill="#E9C431"/>
+  <path d="M234 802C254 767 291 755 321 779C348 801 354 835 332 856C310 878 270 883 244 866C218 848 219 827 234 802Z" fill="#D8A229"/>
+  <text x="396" y="752" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" fill="#1E2527">Signature</text>
+  <text x="396" y="804" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1E2527">Cordillera favorites</text>
+</svg>

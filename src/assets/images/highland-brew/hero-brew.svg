@@ -1,0 +1,25 @@
+<svg width="1200" height="960" viewBox="0 0 1200 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="600" y1="0" x2="600" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D84B"/>
+      <stop offset="0.62" stop-color="#E7D57F"/>
+      <stop offset="1" stop-color="#F6F1E4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="960" fill="url(#sky)"/>
+  <circle cx="950" cy="140" r="90" fill="#F8F0BE" opacity="0.8"/>
+  <path d="M0 760C120 720 214 701 332 684C450 666 548 654 648 678C760 704 850 754 960 781C1046 803 1116 806 1200 798V960H0V760Z" fill="#879F77"/>
+  <path d="M0 820C150 790 248 778 350 736C453 694 560 680 668 710C772 738 850 796 960 830C1030 853 1108 860 1200 854V960H0V820Z" fill="#526E52"/>
+  <rect x="130" y="140" width="940" height="620" rx="38" fill="#F7F3EC"/>
+  <path d="M170 610L880 610L1014 770H130L170 610Z" fill="#D7AE73"/>
+  <path d="M190 330C264 239 342 200 433 186C519 173 607 202 694 257C767 302 812 360 854 437C890 504 887 575 860 612C820 667 740 692 674 682C610 672 557 622 503 598C432 567 354 559 287 540C229 523 177 461 190 330Z" fill="#F7F2E9"/>
+  <circle cx="560" cy="430" r="160" fill="#F5F1EA" stroke="#1E2A2A" stroke-width="10"/>
+  <path d="M621 347C641 334 682 338 711 364C729 381 742 410 742 439C742 491 713 540 666 564C631 582 590 586 557 574C535 566 510 548 491 523C474 500 466 470 469 439C474 399 495 363 527 345C566 323 590 329 621 347Z" fill="#E4C84D"/>
+  <path d="M590 389C528 370 480 393 454 435C432 470 430 512 452 548C482 598 546 628 598 619C651 611 702 569 716 516C729 466 710 420 671 397C649 385 619 381 590 389Z" fill="#F7EFA7"/>
+  <path d="M468 531C502 514 528 513 553 526C580 540 606 562 620 590C588 611 548 621 510 618C469 615 430 597 405 567C399 580 400 596 406 611C417 637 430 659 456 676C487 698 532 707 572 700C606 693 640 675 675 652C705 632 725 603 727 568C729 534 717 498 695 470C677 447 644 427 610 420C565 411 521 421 488 447C462 468 443 499 468 531Z" fill="#D59C32" opacity="0.72"/>
+  <path d="M332 662H820L857 756H290L332 662Z" fill="#A07A4D"/>
+  <path d="M368 626H785L816 706H344L368 626Z" fill="#E4C79D"/>
+  <path d="M342 676H798" stroke="#1E2A2A" stroke-width="8" stroke-linecap="round"/>
+  <text x="110" y="112" font-family="Georgia, serif" font-size="76" font-weight="700" letter-spacing="6" fill="#1E2A2A">COFFEE RAISED</text>
+  <text x="110" y="190" font-family="Georgia, serif" font-size="76" font-weight="700" letter-spacing="6" fill="#1E2A2A">IN THE HIGHLANDS</text>
+</svg>

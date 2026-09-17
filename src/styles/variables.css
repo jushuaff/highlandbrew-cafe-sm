@@ -1,0 +1,114 @@
+:root {
+  --color-primary: #111111;
+  --color-secondary: #d9b900;
+  --color-background: #f3f3f1;
+  --color-surface: #ffffff;
+  --color-surface-strong: #e1e2e3;
+  --color-text: #191919;
+  --color-muted: #626568;
+  --color-accent: #f4d400;
+  --color-accent-soft: #fff2a6;
+  --color-border: rgba(17, 17, 17, 0.14);
+  --color-shadow: rgba(17, 17, 17, 0.12);
+  --container-width: 1180px;
+  --radius-sm: 14px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --shadow-soft: 0 14px 50px rgba(17, 17, 17, 0.08);
+  --shadow-card: 0 18px 38px rgba(17, 17, 17, 0.12);
+  --transition: 220ms ease;
+  --section-padding: clamp(4rem, 6vw, 7rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(var(--container-width), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.section-label::before {
+  content: '';
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  margin: 0.7rem 0 1rem;
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+  max-width: 60ch;
+}
+
+.topographic-grid {
+  position: relative;
+}
+
+.topographic-grid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(29, 42, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29, 42, 42, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

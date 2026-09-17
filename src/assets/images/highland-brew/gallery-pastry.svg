@@ -1,0 +1,12 @@
+<svg width="900" height="1000" viewBox="0 0 900 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1000" fill="#F6EDCC"/>
+  <path d="M0 780C140 740 233 718 349 716C482 713 598 742 732 790C803 819 852 848 900 872V1000H0V780Z" fill="#D7B67A"/>
+  <rect x="122" y="108" width="656" height="620" rx="28" fill="#FAF5EC"/>
+  <rect x="188" y="240" width="524" height="258" rx="24" fill="#E8C884"/>
+  <path d="M230 494C284 441 349 404 425 400C515 396 596 443 636 517C668 576 662 644 621 692C557 772 385 772 296 690C250 648 210 566 230 494Z" fill="#F6E8B9"/>
+  <path d="M310 468C348 433 390 413 438 411C492 408 542 431 577 473C543 496 500 507 454 509C405 510 351 497 310 468Z" fill="#D39D3F" opacity="0.8"/>
+  <path d="M500 412C548 435 580 470 589 511C599 557 578 604 534 639C496 669 437 685 392 673C446 649 489 614 508 563C525 514 512 460 500 412Z" fill="#EFC464"/>
+  <rect x="204" y="636" width="492" height="120" rx="18" fill="#E9D7A5"/>
+  <text x="450" y="706" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#1E2527">LOCAL FLAVORS</text>
+  <text x="450" y="758" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1E2527">Fresh bakes & café sweets</text>
+</svg>
