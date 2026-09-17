@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import {
   ArrowRight,
@@ -25,7 +25,7 @@ import { menuCategories } from './data/menu';
 const homeNavItems = [
   { label: 'Home', href: '#home' },
   { label: 'Our Coffee', href: '#story' },
-  { label: 'Menu', href: '/menu' },
+  { label: 'Menu', href: '#menu' },
   { label: 'Experience', href: '#experience' },
   { label: 'Locations', href: '#locations' },
   { label: 'Contact', href: '#contact' },
@@ -205,9 +205,28 @@ function ContactForm() {
 }
 
 function HomePage() {
+  useEffect(() => {
+    const revealItems = document.querySelectorAll('[data-reveal]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.14 },
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <section id="home" className="page-shell">
+      <section id="home" className="page-shell hero-section">
         <div className="container hero topographic-grid">
           <div className="hero__content">
             <span className="hero__eyebrow">Highland Brew Cafe · Baguio</span>
@@ -219,7 +238,7 @@ function HomePage() {
               the warmth of local café culture at SM City Baguio.
             </p>
             <div className="hero__actions">
-              <a className="button button--primary" href="#story">
+              <a className="button button--primary" href="#menu">
                 Explore the Menu <ArrowRight size={18} />
               </a>
               <a className="button button--secondary" href={siteData.directionsUrl} target="_blank" rel="noreferrer">
@@ -240,7 +259,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="story" className="story-section">
+      <section id="story" className="story-section reveal-on-scroll" data-reveal>
         <div className="container story-layout">
           <div className="story-card story-card__image">
             <img src={storyImage} alt="Terrace and mountain landscape capturing the Highland Brew identity" />
@@ -271,7 +290,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="feature-section">
+      <section className="feature-section reveal-on-scroll" data-reveal>
         <div className="container">
           <SectionIntro
             label="Signature Highland Adventure"
@@ -312,7 +331,30 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="experience" className="experience-section">
+      <section id="menu" className="menu-section reveal-on-scroll" data-reveal>
+        <div className="container">
+          <SectionIntro
+            label="Menu"
+            title="Highland favorites, served your way."
+            copy="Explore the drinks, pastries, and comfort-food favorites that shape a Highland Brew stop in Baguio."
+          />
+
+          <div className="menu-grid">
+            {menuCategories.map((category) => (
+              <article className="menu-card" key={category.title}>
+                <h3>{category.title}</h3>
+                <ul>
+                  {category.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="experience-section reveal-on-scroll" data-reveal>
         <div className="container">
           <SectionIntro
             label="Sky Terrace Experience"
@@ -361,7 +403,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="story-section">
+      <section className="story-section reveal-on-scroll" data-reveal>
         <div className="container">
           <SectionIntro
             label="Local Flavors"
@@ -388,7 +430,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="story-section">
+      <section className="story-section reveal-on-scroll" data-reveal>
         <div className="container">
           <SectionIntro
             label="Gallery"
@@ -410,7 +452,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="locations" className="locations-section">
+      <section id="locations" className="locations-section reveal-on-scroll" data-reveal>
         <div className="container">
           <SectionIntro
             label="Locations"
@@ -463,7 +505,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="contact" className="contact-section">
+      <section id="contact" className="contact-section reveal-on-scroll" data-reveal>
         <div className="container contact-grid">
           <aside className="contact-panel">
             <span className="section-label">Contact</span>
@@ -497,32 +539,6 @@ function HomePage() {
   );
 }
 
-function MenuPage() {
-  return (
-    <section className="menu-section page-shell">
-      <div className="container">
-        <div className="page-header">
-          <span className="section-label">Menu</span>
-          <h1 className="page-header__title">Highland Brew menu</h1>
-        </div>
-
-        <div className="menu-grid">
-          {menuCategories.map((category) => (
-            <article className="menu-card" key={category.title}>
-              <h3>{category.title}</h3>
-              <ul>
-                {category.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Footer() {
   return (
     <footer className="footer">
@@ -539,7 +555,7 @@ function Footer() {
           <div className="footer__list">
             <a href="#home">Home</a>
             <a href="#story">Our Coffee</a>
-            <Link to="/menu">Menu</Link>
+            <a href="#menu">Menu</a>
             <a href="#locations">Locations</a>
           </div>
         </div>
@@ -583,7 +599,6 @@ function App() {
         <main className="site-main">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/menu" element={<MenuPage />} />
           </Routes>
         </main>
         <Footer />

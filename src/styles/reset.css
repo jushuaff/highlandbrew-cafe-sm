@@ -52,6 +52,5 @@ button, input, textarea {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(108, 131, 89, 0.62);
-  outline-offset: 3px;
+  outline: 3px solid rgba(242, 208, 0, 0.8);
 }

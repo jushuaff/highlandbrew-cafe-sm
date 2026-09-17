@@ -19,7 +19,7 @@ export const siteData = {
   navItems: [
     { label: 'Home', href: '#home' },
     { label: 'Our Coffee', href: '#story' },
-    { label: 'Menu', href: '/menu' },
+    { label: 'Menu', href: '#menu' },
     { label: 'Experience', href: '#experience' },
     { label: 'Locations', href: '#locations' },
     { label: 'Contact', href: '#contact' },

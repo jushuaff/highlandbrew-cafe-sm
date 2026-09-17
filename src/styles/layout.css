@@ -7,7 +7,7 @@
   top: 0;
   z-index: 30;
   backdrop-filter: blur(14px);
-  background: rgba(243, 243, 241, 0.88);
+  background: rgba(255, 253, 245, 0.9);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5.2rem;
+  min-height: 5.8rem;
   gap: 1rem;
 }
 
@@ -37,7 +37,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1.8rem;
 }
 
 .main-nav a {
@@ -45,7 +45,7 @@
   font-size: 0.9rem;
   color: var(--color-primary);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   padding: 0.35rem 0;
 }
 
@@ -140,7 +140,7 @@
 
 .demo-badge {
   padding: 0.75rem 1.2rem;
-  background: rgba(22, 31, 30, 0.9);
+  background: rgba(17, 17, 17, 0.94);
   color: rgba(255,255,255,0.8);
   text-align: center;
   font-size: 0.76rem;
